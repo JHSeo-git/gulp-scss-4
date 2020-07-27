@@ -1,4 +1,6 @@
 # SCSS Chart responsive Site
 
-- [] Mobile
-- [] Web browser
+- [x] Mobile
+- [x] Web browser
+
+- site : https://jhseo-git.github.io/gulp-scss-4/
