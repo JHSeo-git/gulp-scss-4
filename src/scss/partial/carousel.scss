@@ -1,0 +1,12 @@
+.carousel__container {
+  .carousel-inner {
+    img {
+      &.carousel {
+        width: 100%;
+      }
+    }
+  }
+  .carousel-control {
+    background: inherit;
+  }
+}

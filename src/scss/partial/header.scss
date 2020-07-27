@@ -1,0 +1,58 @@
+@import "../global/variables";
+@import "../mixin/border.scss";
+
+.header {
+  padding: $px8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  /*
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  */
+  @include headerBorderBottom();
+  .header__column {
+    .title-mobile {
+      display: block;
+    }
+    .title-web {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $px1024) {
+    color: white;
+    background-color: $navy-black;
+    svg {
+      rect,
+      path {
+        fill: white;
+      }
+    }
+    .header__column {
+      display: flex;
+      .title-mobile {
+        display: none;
+      }
+      .title-web {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          padding: $px16;
+          color: $not-select-color;
+          &.selected {
+            color: white;
+          }
+        }
+        &.service-logo {
+          margin-left: $px8;
+        }
+      }
+    }
+  }
+}
