@@ -9,6 +9,10 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="dist/css/styles.css" />
     <title>Chart Site</title>
   </head>
@@ -266,7 +270,12 @@
           </section>
           <section class="carousel__container m-panel">
             <header class="carousel__header"></header>
-            <article class="carousel slide" id="carousel">
+            <article
+              class="carousel slide"
+              id="carousel"
+              data-ride="carousel"
+              data-touch="true"
+            >
               <div class="carousel-inner">
                 <div class="item active">
                   <img class="carousel" src="./src/image/carousel/1.jpg" />
@@ -337,11 +346,48 @@
               </a>
             </article>
           </section>
+          <section class="carousel__container m-panel">
+            <header class="carousel__header"></header>
+            <article
+              class="carousel slide"
+              id="carousel"
+              data-ride="carousel"
+              data-touch="true"
+            >
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="carousel" src="./src/image/carousel/1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="carousel" src="./src/image/carousel/2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="carousel" src="./src/image/carousel/3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="carousel" src="./src/image/carousel/4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="carousel" src="./src/image/carousel/5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="carousel" src="./src/image/carousel/6.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </article>
+          </section>
         </div>
       </main>
     </main>
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/index.js"></script>
   </body>
 </html>
